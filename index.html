@@ -4,29 +4,119 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Oswaldo Ruiz | Portfolio</title>
-
-  <!-- Vincularemos el CSS después -->
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- HEADER / PORTADA -->
-  <header class="hero">
-    <div class="hero-overlay"></div>
-    <div class="hero-content">
-      <h1 class="name">Oswaldo Ruiz</h1>
-      <h2 class="role">Fullstack Developer & UI/UX Designer</h2>
-      <p class="location">From Guadalajara, Mexico 🇲🇽 · English Level: B1 🌎</p>
+  <!-- ===== HERO / PORTADA ===== -->
+  <header class="hero fade-up">
+    <div class="hero-inner">
+      <span class="sub">Fullstack Developer & UI/UX Designer</span>
+      <h1>Hello, I’m <span>Oswaldo Ruiz</span></h1>
+      <p>Building digital experiences & software solutions · Based in Guadalajara, México</p>
     </div>
   </header>
 
-  <!-- PROFILE CARD -->
-  <section class="profile-card">
-    <h3>About Me</h3>
-    <p>I enjoy designing modern and visually attractive interfaces. Passionate about technological innovation and currently learning Artificial Intelligence development.</p>
+  <!-- ===== MAIN LAYOUT (Profile + Content) ===== -->
+  <section class="center">
 
-    <p>I like to experiment with different technologies and combine creativity + logic + design in every project I work on.</p>
+    <!-- PROFILE CARD -->
+    <div class="profile-card fade-up fade-delay-1">
+      <img src="/assets/Image.jpg" alt="Profile Photo" />
+      <h2>Oswaldo Ruiz</h2>
+      <h3>Fullstack Developer · UI/UX Designer · English B1</h3>
 
-    <div class="contact">
-      <p>📧 Email: <a href="mailto:oswaldojruizg@gmail.com">oswaldojruizg@gmail.com</a></p>
-      <p>🌐 Facebook: <a href="https://www.facebook.com/oswaldo.ruiz.798278/?locale=es_LA" target="_b
+      <p class="bio">
+        I enjoy building visual interfaces, designing experiences and developing
+        modern technological innovations. Currently learning AI development
+        and expanding my knowledge across multiple tech stacks.
+      </p>
+
+      <div class="social-links">
+        <a href="mailto:oswaldojruizg@gmail.com">📧</a>
+        <a href="https://www.facebook.com/oswaldo.ruiz.798278" target="_blank">🌐</a>
+        <a href="https://github.com/OswaldoJRuiz" target="_blank">🐙</a>
+      </div>
+
+      <a href="#projects" class="portfolio-btn">View My Work</a>
+    </div>
+
+    <!-- RIGHT SIDE CONTENT -->
+    <div class="main-content fade-up fade-delay-2">
+
+      <!-- SKILLS -->
+      <section class="skills">
+        <h2>Skills</h2>
+
+        <div class="tech-row">
+          <div class="tech"><img src="https://skillicons.dev/icons?i=html" />HTML</div>
+          <div class="tech"><img src="https://skillicons.dev/icons?i=css" />CSS</div>
+          <div class="tech"><img src="https://skillicons.dev/icons?i=js" />JavaScript</div>
+        </div>
+
+        <div class="tech-row">
+          <div class="tech"><img src="https://skillicons.dev/icons?i=python" />Python</div>
+          <div class="tech"><img src="https://skillicons.dev/icons?i=fastapi" />FastAPI</div>
+          <div class="tech"><img src="https://skillicons.dev/icons?i=postgres" />PostgreSQL</div>
+          <div class="tech"><img src="https://skillicons.dev/icons?i=docker" />Docker</div>
+        </div>
+
+        <div class="tech-row">
+          <div class="tech"><img src="https://skillicons.dev/icons?i=figma" />Figma</div>
+          <div class="tech"><img src="https://skillicons.dev/icons?i=canva" />Canva</div>
+        </div>
+      </section>
+
+      <!-- PROJECTS -->
+      <section class="projects" id="projects">
+        <h2>Featured Projects</h2>
+
+        <div class="project-card">
+          <div class="thumb">
+            <img src="/assets/logoATHORA.png" alt="Athora League" />
+          </div>
+          <div class="project-info">
+            <h3>Athora League</h3>
+            <p>Sports league platform for UDG. Match management, stats & real-time UI.</p>
+            <div class="actions">
+              <a href="#" class="btn">View Project</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="thumb">
+            <img src="/assets/logo_patitascut.png" alt="Patitas CUT" />
+          </div>
+          <div class="project-info">
+            <h3>Patitas CUT</h3>
+            <p>Campus adoption website for stray dogs · Social impact and awareness platform.</p>
+            <div class="actions">
+              <a href="#" class="btn">View Project</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="thumb">
+            <img src="/assets/Logo_Nasa.png" alt="NASA Hackathon" />
+          </div>
+          <div class="project-info">
+            <h3>NASA Project</h3>
+            <p>Platform created for NASA Hackathon analyzing renewable solar regions.</p>
+            <div class="actions">
+              <a href="#" class="btn">View Project</a>
+            </div>
+          </div>
+        </div>
+
+      </section>
+    </div>
+  </section>
+
+  <footer class="footer">
+    © 2025 Oswaldo Ruiz — All rights reserved.
+  </footer>
+
+</body>
+</html>
